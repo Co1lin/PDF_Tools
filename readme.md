@@ -10,8 +10,7 @@ https://blog.valderfield.com/archives/19/
 ## PDF Merger Usage:  
 
 ### Edit some values before run `pdfmerger.py` in `__init__` method:  
-在运行程序之前，先设定一些`__init__`方法中重要的变量：
-
+在运行程序之前，先设定一些`__init__`方法中重要的变量:  
 `self.DIR_PATH = ` your directory where PDF files exist (DON'T end with "/")（放PDF文件的目录地址。最后不要加斜杠！）  
 
 Fill the list of regular expressions:  
