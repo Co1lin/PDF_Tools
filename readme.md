@@ -14,11 +14,10 @@ https://blog.valderfield.com/archives/19/
 `self.DIR_PATH = ` your directory where PDF files exist (DON'T end with "/")（放PDF文件的目录地址。最后不要加斜杠！）  
 
 Fill the list of regular expressions:  
-填正则表达式列表（这些表达式会被依次执行，每次执行的结果作为下一次的输入）：
+填正则表达式列表（这些表达式会被依次执行，每次执行的结果作为下一次的输入）：  
 `RE_LIST = [
     
-]`
-
+]`  
 You can fill `\d+` in `[` and `]` if you are lucky.  
 如果你的文件名中从头开始的第一个数字（连续数字如123视为一个数字）便是你想要的序号，那么你只需要在中括号里填入一项`\d+`即可。  
 
