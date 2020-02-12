@@ -9,12 +9,11 @@ class PdfMerger(object):
         print('Initializing...')
         '''Set some constants according to your needs'''
         # directory of PDFs need to be merged (DON'T end with "/")
-        self.DIR_PATH = '/Users/colin/Downloads/大学物理学'
+        self.DIR_PATH = ' '
         # times that the match operation needs to be performed
         # TIMES = 2
         # the list of regular expressions
         RE_LIST = [
-            '-{1,1}\d+',
             '\d+'
         ]
         # the start index that can be matched of the PDF
