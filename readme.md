@@ -7,7 +7,7 @@ So far only `pdfmerger.py` is availiable.
 # Details
 
 Visit my blog for details:  
-https://blog.valderfield.com/archives/19/  
+<https://blog.valderfield.com/archives/19/>  
 
 ## PDF Merger Usage:  
 
