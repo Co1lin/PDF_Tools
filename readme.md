@@ -20,16 +20,15 @@ RE_LIST = [
     
 ]
 ```
-You can fill `\d+` in `[` and `]` if you are lucky.  
+You can fill `\d+` between `[` and `]` if you are lucky.  
 如果你的文件名中从头开始的第一个数字（连续数字如123视为一个数字）便是你想要的序号，那么你只需要在中括号里填入一项`\d+`即可。  
 
 The start index that can be matched of the PDF：  
-需要合并的PDF文件的文件名中起始的序号：  
-`self.START_INDEX = 1`
-
+需要合并的PDF文件的文件名中可以提取出来的起始的序号（比如你是`xxx-002.pdf`是第一个文件那就填2）：  
+`self.START_INDEX = 1	# 1 by default`  
 
 A value greater than the number of PDFs:  
-一个大于需要合并的PDF文件总数的数值：
+一个大于需要合并的PDF文件总数的数值：  
 `self.INF_VALUE = 100000  # usually don't need to change unless you have toooo many PDFs`
 
 You can change the codes in `__get_index` method for other(more complex) regular expression matching.  
@@ -39,8 +38,8 @@ You can change the codes in `__get_index` method for other(more complex) regular
 设置输出文件名称和工作模式：  
 `merger.work('output.pdf', work_type = 3)`  
 
-The output file is `output.pdf` in the directory you set before(where your original PDF files exist).
+The output file is `output.pdf` in the directory you set before(where your original PDF files exist).  
 此时输出文件为`output.pdf`，放在原来存放PDF的文件夹里。  
 
-You can keep the `work_type` value.
-你可以不改变`work_type`的现有值。
+You can keep the `work_type` value.  
+你可以不改变`work_type`的现有值。  
