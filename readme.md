@@ -7,7 +7,7 @@ So far only `pdfmerger.py` is availiable.
 # Details
 
 Visit my blog for details:  
-[利用PyPDF批量处理PDF文件——合并篇](https://blog.valderfield.com/archives/19/){:target='_blank'}  
+[利用PyPDF批量处理PDF文件——合并篇](https://blog.valderfield.com/archives/19/)  
 
 ## PDF Merger Usage:  
 
