@@ -1,6 +1,8 @@
 # Introduction
 
 PDF tools by PyPDF2.  
+So far only `pdfmerger.py` is availiable.  
+现在只有合并多个PDF的程序`pdfmerger.py`。  
 
 # Details
 
