@@ -9,9 +9,32 @@ So far only `pdfmerger.py` is availiable.
 Visit my blog for details:  
 [利用PyPDF批量处理PDF文件——合并篇](https://blog.valderfield.com/archives/19/)  
 
-## PDF Merger Usage:  
+## New PDF Merger Usage(`merger.py`)
+
+用之前改程序中的一些变量：
+
+```python
+# 本程序依赖于我自己编写的IndexMap模块运行。
+# 详情见 https://github.com/EnjoyColin/Practical-Python-Scripts/tree/master/IndexMap
+# 请确保IndexMap.py与这个程序在同一层目录下。
+files = IndexMap()	# 创建IndexMap实例
+# 设定PDF文件所在目录
+files.set_dir('/path/to/dir_of_PDF_files')
+# 正则匹配表达式列表（下面的配置从左起匹配第一个数字（连续数字如123视为一个数字123）作为序号）
+RE_LIST = [
+    '\d+'
+]
+files.set_patterns(RE_LIST)	# 将正则表达式应用于IndexMap实例
+files.construct_map()	# IndexMap实例构建映射
+merger = PdfMerger(files, 'output.pdf')	# 'output.pdf'字符串指定了输出PDF的文件名
+```
+
+
+
+## Old PDF Merger Usage(`pdfmerger.py`):  
 
 ### Edit some values before run `pdfmerger.py` in `__init__` method:  
+
 在运行程序之前，先设定一些`__init__`方法中重要的变量:  
 `self.DIR_PATH = ` your directory where PDF files exist (DON'T end with "/")（放PDF文件的目录地址。最后不要加斜杠！）  
 
