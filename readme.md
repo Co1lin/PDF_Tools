@@ -18,14 +18,17 @@ Visit my blog for details:
 # 详情见 https://github.com/EnjoyColin/Practical-Python-Scripts/tree/master/IndexMap
 # 请确保IndexMap.py与这个程序在同一层目录下。
 files = IndexMap()	# 创建IndexMap实例
+
 # 设定PDF文件所在目录
 files.set_dir('/path/to/dir_of_PDF_files')
+
 # 正则匹配表达式列表（下面的配置从左起匹配第一个数字（连续数字如123视为一个数字123）作为序号）
 RE_LIST = [
     '\d+'
 ]
 files.set_patterns(RE_LIST)	# 将正则表达式应用于IndexMap实例
 files.construct_map()	# IndexMap实例构建映射
+
 merger = PdfMerger(files, 'output.pdf')	# 'output.pdf'字符串指定了输出PDF的文件名
 ```
 
