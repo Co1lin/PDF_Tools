@@ -15,7 +15,7 @@ Visit my blog for details:
 
 ```python
 # 本程序依赖于我自己编写的IndexMap模块运行。
-# 详情见 https://github.com/EnjoyColin/Practical-Python-Scripts/tree/master/IndexMap
+# 详情见 https://github.com/Co1lin/Practical-Python-Scripts/tree/master/IndexMap
 # 请确保IndexMap.py与这个程序在同一层目录下。
 files = IndexMap()	# 创建IndexMap实例
 
